@@ -7,9 +7,11 @@ class GlazerCalc
         double width, height, woodLength, glassArea;
         string widthString, heightString;
 
+        Console.WriteLine("Please enter width:");
         widthString = Console.ReadLine();
         width = double.Parse(widthString);
 
+        Console.WriteLine("Please enter height:");
         heightString = Console.ReadLine();
         height = double.Parse(heightString);
 
@@ -21,5 +23,8 @@ class GlazerCalc
             woodLength + " feet");
         Console.WriteLine("The area of the glass is " +
             glassArea + " square metres");
+
+        Console.WriteLine("Please press any key to exit:");
+        widthString = Console.ReadLine();
     }
 }
